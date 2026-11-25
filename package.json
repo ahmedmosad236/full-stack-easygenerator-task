@@ -1,0 +1,25 @@
+{
+  "name": "full-stack-easygenerator-task",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "test": "turbo run test",
+    "test:api": "pnpm --filter @repo/api test",
+    "test:api:e2e": "pnpm --filter @repo/api test:e2e",
+    "test:web": "pnpm --filter @repo/web test",
+    "test:e2e": "pnpm --filter @repo/web test:e2e"
+  },
+  "devDependencies": {
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  }
+}
